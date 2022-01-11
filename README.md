@@ -4,6 +4,8 @@
 
 > As the name implies, this project is the first Microverse portfolio project of many which successively works towards buillding a greta portfolio website according to the Figma templates.
 
+Screen Shot 2022-01-11 at 20.19.43
+
 ## Built With
 
 - HTML and CSS
