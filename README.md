@@ -4,6 +4,8 @@
 
 > As the name implies, this project is the first Microverse portfolio project of many which successively works towards buillding a greta portfolio website according to the Figma templates.
 
+![home](/home.png)
+
 ## Built With
 
 - HTML and CSS
