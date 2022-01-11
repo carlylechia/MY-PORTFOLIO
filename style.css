@@ -32,10 +32,10 @@ header {
   z-index: -1;
 }
 
-.headerbg {
-  position: absolute;
-  left: 60.37%;
-  top: 320px;
+.headline-section {
+  background-image: url('images/Illustration.png');
+  background-position-x: right 320px;
+  background-position-x: left 60.37%;
 }
 
 .navbar {
@@ -84,7 +84,11 @@ header {
   height: 590px;
   width: 375px;
   top: 92px;
-  background: #1c1a19;
+  background: #1c1a19 url('images/Illustration.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position: right;
+  background-position-y: 220px;
 }
 
 h1 {
