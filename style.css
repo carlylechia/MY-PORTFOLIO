@@ -808,11 +808,6 @@ ul {
   color: green;
 }
 
-.am-btn:enabled {
-  background-color: #ff6b00;
-  color: #fff;
-}
-
 .am-btn:disabled {
   background-color: #ff6b00;
   color: red;
