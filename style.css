@@ -1307,6 +1307,14 @@ body {
   }
 
   .cardtags {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
     margin-left: 7.5vw;
     margin-right: 3vw;
   }
@@ -1514,17 +1522,6 @@ body {
 
   .fullwidth:hover {
     background-color: #1c1a19;
-  }
-
-  .cardtags {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
   }
 
   .probtn1 {
