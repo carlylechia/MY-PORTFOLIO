@@ -1041,7 +1041,7 @@ body {
   }
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 620px) and (max-width: 992px) {
   .portfolio {
     width: 100vw;
     margin: 0;
@@ -1084,8 +1084,9 @@ body {
   .topdesk {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    margin-left: 70vw;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 55vw;
   }
 
   .headnum {
@@ -1240,7 +1241,7 @@ body {
     border: 1px solid grey;
     position: absolute;
     right: 7vw;
-    top: 33px;
+    top: 8vw;
   }
 
   .sample {
@@ -1305,19 +1306,32 @@ body {
     list-style: none;
   }
 
+  .cardtags {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 7.5vw;
+    margin-right: 3vw;
+  }
+
   .tag {
     cursor: pointer;
-    margin-right: 6px;
+    margin-right: 8px;
     max-height: 40px;
-    max-width: 85px;
-    font-size: 20px;
+    max-width: 95px;
+    font-size: 2vw;
   }
 
   .csstag {
-    padding: 7px 28px;
+    padding: 7px 17px;
     position: static;
-    width: 12vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8vw;
     background: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
@@ -1327,10 +1341,10 @@ body {
   }
 
   .htag {
-    padding: 7px 22px;
+    padding: 7px 14px;
     position: static;
-    width: 13vw;
-    height: 10vw;
+    width: 7vw;
+    height: 8vw;
     background: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
@@ -1340,9 +1354,9 @@ body {
   }
 
   .bootag {
-    padding: 7px 4px;
+    padding: 7px 8px;
     position: static;
-    width: 22.5vw;
+    width: 25vw;
     height: 10vw;
     background: #fff;
     border: 1px solid #8993a4;
@@ -1352,10 +1366,10 @@ body {
   }
 
   .rubytag {
-    padding: 7px 21px;
+    padding: 7px 15px;
     position: static;
-    width: 15vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8vw;
     background: #fff;
     border: 1px solid #8993a4;
     box-sizing: border-box;
@@ -1415,7 +1429,7 @@ body {
   .card {
     position: relative;
     margin-bottom: 20px;
-    width: 31vw;
+    width: 45.5vw;
     transition: transform 0.5s ease-out;
   }
 
@@ -1454,7 +1468,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    left: 20px;
     bottom: 62px;
   }
 
@@ -1465,7 +1478,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 30px;
     color: #fff;
     flex: none;
     order: 0;
@@ -1481,7 +1494,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 20px;
     color: #fff;
     flex: none;
     order: 1;
@@ -1496,7 +1509,7 @@ body {
   }
 
   .fullwidth {
-    width: 31vw;
+    width: 45.5vw;
     min-width: 200px;
     height: 48px;
     display: flex;
@@ -1509,17 +1522,6 @@ body {
 
   .fullwidth:hover {
     background-color: #1c1a19;
-  }
-
-  .cardtags {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
   }
 
   .probtn1 {
@@ -1554,7 +1556,7 @@ body {
 
   .info {
     width: 100vw;
-    background: #1c1a19 url('images/Group.png');
+    background: #1c1a19;
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 205px;
@@ -1645,9 +1647,9 @@ body {
 
   .divider {
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
     height: 1px;
-    width: 80vw;
+    width: 60vw;
     background: #fff;
   }
 
@@ -2004,7 +2006,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
-    line-height: 52px;
+    line-height: 37.5px;
     margin-left: 5vw;
   }
 
@@ -2015,14 +2017,6 @@ body {
   label {
     display: block;
     margin-top: 2em;
-  }
-
-  .footer {
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    width: 100vw;
-    height: 250px;
   }
 
   .footer-links {
@@ -2115,7 +2109,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 37vh;
+    top: 41vh;
     left: 10px;
   }
 
@@ -2604,7 +2598,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
-    width: 56vw;
+    width: 37vw;
     display: flex;
     font-size: 1.2em;
     margin: 20px 0;
@@ -3018,7 +3012,7 @@ body {
   }
 
   #legendtext:hover {
-    transform: translate(50px, 50px);
+    transform: translate(30px, 30px);
   }
 
   form ul {
@@ -3030,19 +3024,10 @@ body {
     margin-top: 2em;
   }
 
-  .footer {
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    width: 100vw;
-    height: 250px;
-  }
-
   .footer-links {
     position: absolute;
     top: 100%;
     background: silver;
-    margin: auto;
     height: 75px;
     width: 100vw;
     border-top: 1px solid #555;
@@ -3050,6 +3035,7 @@ body {
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    margin-left: -10px;
   }
 
   .foot {
