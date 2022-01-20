@@ -1274,7 +1274,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 40px;
     color: #091e42;
     flex: none;
     order: 0;
@@ -1328,9 +1328,9 @@ body {
   }
 
   .csstag {
-    padding: 7px 17px;
+    padding: 7px 15px;
     position: static;
-    width: 8vw;
+    width: 7vw;
     height: 8vw;
     background: #fff;
     border: 1px solid #8993a4;
