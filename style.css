@@ -2065,9 +2065,11 @@ body {
     font-size: 0.7vw;
     line-height: 24px;
     text-align: center;
+    text-shadow: 1px 1px goldenrod;
     border: 1px solid goldenrod;
     border-radius: 90%;
     padding: 10px;
+    box-shadow: 2px 2px black;
     margin-left: 10vw;
     transition: transform 0.5s ease-out;
     cursor: default;
