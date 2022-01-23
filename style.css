@@ -2445,7 +2445,7 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/backgroundimg.png');
+    background: linear-gradient(180.45deg, rgba(26, 25, 25, 0.74) 0.75%, rgba(88, 88, 88, 0.9) 61.94%), url('images/backgroundimg.png');
   }
 
   .bcg-settings {
@@ -2500,7 +2500,8 @@ body {
   }
 
   .cardtagbg {
-    background: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.493);
+    color: #fff;
   }
 
   .fullwidth {
