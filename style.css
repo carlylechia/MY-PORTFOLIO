@@ -2104,6 +2104,11 @@ body {
     transform: translateY(-10px);
   }
 
+  .topdesk .headnum a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .headline {
     width: 100vw;
     background: #1c1a19 url('images/Illustration-header.png');
