@@ -1,10 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Setup and mobile version skeleton
+# MY PORTFOLIO: My responsive portfolio site
 
 > As the name implies, this project is the first Microverse portfolio project of many which successively works towards buillding a greta portfolio website according to the Figma templates.
 
 ![home](/home.png)
+
+# Deployment
+https://carlylechia.github.io/MY-PORTFOLIO/
 
 ## Built With
 
