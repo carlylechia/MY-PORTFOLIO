@@ -2174,10 +2174,8 @@ body {
   }
 
   h1 {
-    position: absolute;
-    top: 28vh;
-    left: 10vw;
-    width: 400px;
+    width: 25vw;
+    margin: 15px 146px;
     font-family: 'Crete Round', serif;
     color: #ff6b00;
     font-style: normal;
@@ -2188,10 +2186,8 @@ body {
   }
 
   .h3 {
-    position: absolute;
-    top: 51vh;
-    left: 10vw;
     width: 80vw;
+    margin: 15px 146px;
     font-family: 'Roboto', sans-serif;
     color: #fff5e1;
     font-style: normal;
@@ -2205,14 +2201,11 @@ body {
     display: flex;
     font-size: 1.2em;
     line-height: 24px;
-    margin: 20px 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    position: absolute;
-    left: 10vw;
-    top: 58vh;
+    margin: 15px 146px;
   }
 
   .works {
@@ -2438,7 +2431,7 @@ body {
 
   .card-background {
     width: 31vw;
-    height: 50vh;
+    height: 70vh;
     min-width: 200px;
     left: 0;
     top: 0;
@@ -2450,7 +2443,7 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    background: linear-gradient(180.45deg, rgba(26, 25, 25, 0.74) 0.75%, rgba(88, 88, 88, 0.9) 61.94%), url('images/backgroundimg.png');
+    background: linear-gradient(180.45deg, rgba(15, 15, 15, 0.74) 0.75%, rgba(160, 155, 155, 0.9) 61.94%), url('images/backgroundimg.png');
   }
 
   .bcg-settings {
@@ -2474,6 +2467,7 @@ body {
   .cardtitle {
     position: static;
     height: 80px;
+    padding-top: 35px;
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: normal;
@@ -2487,6 +2481,7 @@ body {
 
   .cardagraph {
     max-height: 90px;
+    padding-top: 40px;
   }
 
   .cp-text {
@@ -2530,6 +2525,7 @@ body {
     flex-direction: row;
     position: static;
     flex: none;
+    padding-top: 30px;
     order: 2;
     flex-grow: 0;
     margin-top: 12px;
