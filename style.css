@@ -2431,7 +2431,7 @@ body {
 
   .card-background {
     width: 31vw;
-    height: 50vh;
+    height: 70vh;
     min-width: 200px;
     left: 0;
     top: 0;
@@ -2467,6 +2467,7 @@ body {
   .cardtitle {
     position: static;
     height: 80px;
+    padding-top: 35px;
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: normal;
@@ -2480,6 +2481,7 @@ body {
 
   .cardagraph {
     max-height: 90px;
+    padding-top: 40px;
   }
 
   .cp-text {
@@ -2523,6 +2525,7 @@ body {
     flex-direction: row;
     position: static;
     flex: none;
+    padding-top: 30px;
     order: 2;
     flex-grow: 0;
     margin-top: 12px;
