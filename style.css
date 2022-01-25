@@ -2174,10 +2174,8 @@ body {
   }
 
   h1 {
-    position: absolute;
-    top: 28vh;
-    left: 10vw;
-    width: 400px;
+    width: 25vw;
+    margin: 15px 146px;
     font-family: 'Crete Round', serif;
     color: #ff6b00;
     font-style: normal;
@@ -2188,10 +2186,8 @@ body {
   }
 
   .h3 {
-    position: absolute;
-    top: 51vh;
-    left: 10vw;
     width: 80vw;
+    margin: 15px 146px;
     font-family: 'Roboto', sans-serif;
     color: #fff5e1;
     font-style: normal;
@@ -2205,14 +2201,11 @@ body {
     display: flex;
     font-size: 1.2em;
     line-height: 24px;
-    margin: 20px 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-style: normal;
     font-weight: normal;
-    position: absolute;
-    left: 10vw;
-    top: 58vh;
+    margin: 15px 146px;
   }
 
   .works {
