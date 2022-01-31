@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;400&display=swap");
 
 @font-face {
   font-family: InaiMathi;
-  src: url('fonts/InaiMathi.ttf');
+  src: url("fonts/InaiMathi.ttf");
 }
 
 html {
@@ -47,7 +47,6 @@ body {
     justify-content: space-between;
     color: #fff;
     background: #3c3a39;
-    z-index: -4;
   }
 
   .logo {
@@ -61,10 +60,39 @@ body {
     margin-left: 25px;
   }
 
-  .menu {
+  .fa-bars {
+    color: white;
     position: absolute;
     right: 0;
     margin-right: 24px;
+  }
+
+  .mobile-dropdown {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    background: #3c3a39;
+    visibility: hidden;
+  }
+
+  .mobile-dropdown ul li a {
+    text-decoration: none;
+    font-family: "inter", serif;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 15px 24px;
+    color: #fff5e1;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .drop-option {
+    width: 95vw;
+    border-bottom: 1px solid #fff5e1;
+    margin: 20px 10px;
+    padding: 5px 0;
   }
 
   .topdesk {
@@ -77,7 +105,7 @@ body {
     align-items: flex-start;
     padding: 120px 24px;
     height: 690px;
-    background: #1c1a19 url('images/Illustration.png');
+    background: #1c1a19 url("images/Illustration.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: bottom;
@@ -86,7 +114,7 @@ body {
   h1 {
     position: static;
     width: 74vw;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     color: #ff6b00;
     font-style: normal;
     font-weight: normal;
@@ -102,7 +130,7 @@ body {
     position: static;
     width: 80vw;
     height: 8vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff5e1;
     font-style: normal;
     font-weight: bold;
@@ -117,7 +145,7 @@ body {
   .h5 {
     position: static;
     width: 80vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-style: normal;
     font-weight: normal;
@@ -211,7 +239,7 @@ body {
 
   .titlewords {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10vw;
@@ -280,7 +308,7 @@ body {
 
   .postopic {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 8vw;
@@ -296,7 +324,7 @@ body {
   .multigraph {
     position: static;
     width: 80vw;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -386,7 +414,7 @@ body {
     position: static;
     width: 124px;
     height: 48px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -443,7 +471,7 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/backgroundimg.png');
+    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
   }
 
   .bcg-settings {
@@ -472,7 +500,7 @@ body {
     width: 70vw;
     height: 10vw;
     max-height: 80px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 6vw;
@@ -492,7 +520,7 @@ body {
   }
 
   .cp-text {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 3.5vw;
@@ -507,7 +535,7 @@ body {
   }
 
   .cardtagbg {
-    background: rgba(255, 255, 255, 0.24);
+    background: rgb(255 255 255 / 24%);
   }
 
   .fullwidth {
@@ -547,7 +575,7 @@ body {
     border: 1px solid #ff6b00;
     margin-top: 12px;
     margin-bottom: 12px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -567,7 +595,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    background: #1c1a19 url('images/Frame.png');
+    background: #1c1a19 url("images/Frame.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 475px;
@@ -584,7 +612,7 @@ body {
 
   .am-title {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -600,7 +628,7 @@ body {
   .am-description {
     position: static;
     width: 80vw;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -625,7 +653,7 @@ body {
     flex-grow: 0;
     margin-top: -10px;
     margin-bottom: 24px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -690,7 +718,7 @@ body {
     height: 24px;
     left: 49.46px;
     top: 8.73px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -756,7 +784,7 @@ body {
 
   .lang {
     color: #fff;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -810,7 +838,7 @@ body {
 
   .frametext {
     position: static;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -842,7 +870,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -900,7 +928,7 @@ body {
     height: 24px;
     left: 42px;
     top: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -944,7 +972,7 @@ body {
     order: 0;
     flex-grow: 0;
     margin: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -977,7 +1005,7 @@ body {
     width: 90vw;
     height: 216px;
     margin-top: 40px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
   }
@@ -998,7 +1026,7 @@ body {
     border-bottom: 1px solid #999;
     padding: 10px;
     outline: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     width: 90vw;
   }
 
@@ -1006,7 +1034,7 @@ body {
     background: #fbf8f7;
     border: none;
     outline: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     padding: 15px;
     width: 90vw;
   }
@@ -1062,7 +1090,7 @@ body {
 
   .logo {
     position: absolute;
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1100,7 +1128,7 @@ body {
 
   .headline {
     width: 100vw;
-    background: #1c1a19 url('images/Illustration-header.png');
+    background: #1c1a19 url("images/Illustration-header.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
@@ -1166,7 +1194,7 @@ body {
     top: 28vh;
     left: 10vw;
     width: 400px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     color: #ff6b00;
     font-style: normal;
     font-weight: normal;
@@ -1180,7 +1208,7 @@ body {
     top: 51vh;
     left: 10vw;
     width: 80vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff5e1;
     font-style: normal;
     font-weight: bold;
@@ -1194,7 +1222,7 @@ body {
     font-size: 1.2em;
     line-height: 24px;
     margin: 20px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-style: normal;
     font-weight: normal;
@@ -1225,7 +1253,7 @@ body {
 
   .titlewords {
     width: 40vw;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -1270,7 +1298,7 @@ body {
 
   .postopic {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -1283,7 +1311,7 @@ body {
   }
 
   .multigraph {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -1388,7 +1416,7 @@ body {
     position: static;
     width: 124px;
     height: 48px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -1451,7 +1479,7 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/backgroundimg.png');
+    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
   }
 
   .bcg-settings {
@@ -1474,7 +1502,7 @@ body {
   .cardtitle {
     position: static;
     height: 80px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -1490,7 +1518,7 @@ body {
   }
 
   .cp-text {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -1505,7 +1533,7 @@ body {
   }
 
   .cardtagbg {
-    background: rgba(255, 255, 255, 0.24);
+    background: rgb(255 255 255 / 24%);
   }
 
   .fullwidth {
@@ -1538,7 +1566,7 @@ body {
     border: 1px solid #ff6b00;
     margin-top: 12px;
     margin-bottom: 12px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -1579,7 +1607,7 @@ body {
 
   .am-title {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -1594,7 +1622,7 @@ body {
 
   .am-description {
     position: static;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     line-height: 32px;
@@ -1619,7 +1647,7 @@ body {
     order: 2;
     flex-grow: 0;
     margin-bottom: 24px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -1674,7 +1702,7 @@ body {
     height: 24px;
     left: 49.46px;
     top: 8.73px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -1740,7 +1768,7 @@ body {
 
   .lang {
     color: #fff;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -1794,7 +1822,7 @@ body {
 
   .frametext {
     position: static;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -1826,7 +1854,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -1884,7 +1912,7 @@ body {
     height: 24px;
     left: 42px;
     top: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -1928,7 +1956,7 @@ body {
     order: 0;
     flex-grow: 0;
     margin: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -1961,7 +1989,7 @@ body {
     width: 49vw;
     padding: 10px;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   textarea {
@@ -1972,7 +2000,7 @@ body {
     border: none;
     outline: none;
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .fm-btn {
@@ -2002,7 +2030,7 @@ body {
     width: 32vw;
     position: absolute;
     top: 18vh;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
@@ -2059,7 +2087,7 @@ body {
 
   .logo {
     position: absolute;
-    font-family: 'InaiMathi', serif;
+    font-family: "InaiMathi", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.7vw;
@@ -2111,7 +2139,7 @@ body {
 
   .headline {
     width: 100vw;
-    background: #1c1a19 url('images/Illustration-header.png');
+    background: #1c1a19 url("images/Illustration-header.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
@@ -2176,7 +2204,7 @@ body {
   h1 {
     width: 25vw;
     margin: 15px 146px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     color: #ff6b00;
     font-style: normal;
     font-weight: normal;
@@ -2188,7 +2216,7 @@ body {
   .h3 {
     width: 80vw;
     margin: 15px 146px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff5e1;
     font-style: normal;
     font-weight: bold;
@@ -2201,7 +2229,7 @@ body {
     display: flex;
     font-size: 1.2em;
     line-height: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-style: normal;
     font-weight: normal;
@@ -2230,7 +2258,7 @@ body {
 
   .titlewords {
     width: 40vw;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -2275,7 +2303,7 @@ body {
 
   .postopic {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -2288,7 +2316,7 @@ body {
   }
 
   .multigraph {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -2380,7 +2408,7 @@ body {
     position: static;
     width: 124px;
     height: 48px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -2443,7 +2471,7 @@ body {
     right: 1px;
     top: 1px;
     bottom: 1px;
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/backgroundimg.png');
+    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
   }
 
   .bcg-settings {
@@ -2468,7 +2496,7 @@ body {
     position: static;
     height: 80px;
     padding-top: 35px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -2485,7 +2513,7 @@ body {
   }
 
   .cp-text {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -2500,7 +2528,7 @@ body {
   }
 
   .cardtagbg {
-    background: rgba(255, 255, 255, 0.24);
+    background: rgb(255 255 255 / 24%);
     color: #fff;
   }
 
@@ -2546,7 +2574,7 @@ body {
     border: 1px solid #ff6b00;
     margin-top: 12px;
     margin-bottom: 12px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-size: 17px;
     line-height: 24px;
@@ -2564,7 +2592,7 @@ body {
 
   .info {
     width: 100vw;
-    background: #1c1a19 url('images/Group.png');
+    background: #1c1a19 url("images/Group.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 205px;
@@ -2587,7 +2615,7 @@ body {
 
   .am-title {
     position: static;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -2602,7 +2630,7 @@ body {
 
   .am-description {
     position: static;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: normal;
     line-height: 32px;
@@ -2627,7 +2655,7 @@ body {
     order: 2;
     flex-grow: 0;
     margin-bottom: 24px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -2682,7 +2710,7 @@ body {
     height: 24px;
     left: 49.46px;
     top: 8.73px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -2748,7 +2776,7 @@ body {
 
   .lang {
     color: #fff;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -2802,7 +2830,7 @@ body {
 
   .frametext {
     position: static;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -2834,7 +2862,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -2892,7 +2920,7 @@ body {
     height: 24px;
     left: 42px;
     top: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -2936,7 +2964,7 @@ body {
     order: 0;
     flex-grow: 0;
     margin: 8px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -2969,7 +2997,7 @@ body {
     width: 49vw;
     padding: 10px;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   textarea {
@@ -2980,7 +3008,7 @@ body {
     border: none;
     outline: none;
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .fm-btn {
@@ -3010,7 +3038,7 @@ body {
     width: 32vw;
     position: absolute;
     top: 18vh;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
