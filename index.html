@@ -36,7 +36,7 @@
               <h2>Carlyle Codes</h2>
             </div>
             <nav class="menu">
-              <button class="menu-btn"><i class="fas fa-bars"></i></button>
+              <i class="fas fa-bars" onclick="changeIcon()"></i>
             </nav>
             <ul class="topdesk">
               <li class="headnum"><a href="#portfolio">Portfolio</a></li>
@@ -48,11 +48,11 @@
       </header>
       <div class="mobile-dropdown">
         <ul class="mobile-menu">
-          <li class="drop-option"><a href="#portfolio">Portfolio</a></li>
+          <li class="drop-option" onclick="hideMenu()"><a href="#portfolio">Portfolio</a></li>
           <hr>
-          <li class="drop-option"><a href="#about">About</a></li>
+          <li class="drop-option" onclick="hideMenu()"><a href="#about">About</a></li>
           <hr>
-          <li class="drop-option"><a href="#contact">Contact</a></li>
+          <li class="drop-option" onclick="hideMenu()"><a href="#contact">Contact</a></li>
           <hr>
         </ul>
     </div>
@@ -325,5 +325,7 @@
       <li><a href="#"><i class="fab fa-medium-m box five foot"></i></a></li>
     </ul>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

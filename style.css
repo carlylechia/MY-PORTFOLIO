@@ -47,10 +47,9 @@ body {
     justify-content: space-between;
     color: #fff;
     background: #3c3a39;
-    z-index: -4;
+    /* z-index: -4; */
   }
 
-  
   .logo {
     position: absolute;
     font-family: 'Roboto', serif;
@@ -62,12 +61,11 @@ body {
     margin-left: 25px;
   }
 
-  .menu-btn {
-    background-color: #3c3a39;
-  }
-
   .fa-bars {
     color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 24px;
   }
 
   .mobile-dropdown {
@@ -90,16 +88,9 @@ body {
     font-size: 32px;
     line-height: 44px;
     padding: 15px 24px;
-    text-decoration: none;
     color: #fff5e1;
     font-weight: bold;
     font-style: normal;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 24px;
   }
 
   .topdesk {
