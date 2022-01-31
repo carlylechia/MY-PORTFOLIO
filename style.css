@@ -50,6 +50,7 @@ body {
     z-index: -4;
   }
 
+  
   .logo {
     position: absolute;
     font-family: 'Roboto', serif;
@@ -59,6 +60,40 @@ body {
     line-height: 24px;
     text-align: center;
     margin-left: 25px;
+  }
+
+  .menu-btn {
+    background-color: #3c3a39;
+  }
+
+  .fa-bars {
+    color: white;
+  }
+
+  .mobile-dropdown {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    background: #3c3a39;
+    visibility: hidden;
+  }
+
+  hr {
+    margin: 10px 10px;
+  }
+
+  .mobile-dropdown ul li a {
+    text-decoration: none;
+    font-family: 'inter', serif;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 15px 24px;
+    text-decoration: none;
+    color: #fff5e1;
+    font-weight: bold;
+    font-style: normal;
   }
 
   .menu {
