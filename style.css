@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@100;400&display=swap");
 
 @font-face {
   font-family: InaiMathi;
@@ -3082,4 +3082,106 @@ body {
     color: black;
     margin: 20px 5px;
   }
+} */
+
+.modal-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.modal {
+  background: white;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px 16px;
+  border: 1px solid black;
+  animation: 0.7s increase;
+}
+
+@keyframes increase {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+.modal-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-icon {
+  font-size: 30px;
+  color: #67798e;
+}
+
+.modal-title {
+    position: static;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8vw;
+    line-height: 44px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    height: 10vh;
+    margin-top: -6px;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: -38px;
+  background: white;
+}
+
+.modal-list .tag {
+  border-width: 14px;
+  height: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  background-color: white;
+}
+
+.modal-img {
+  width: 99%;
+  margin-right: 16px;
+}
+
+.modal-description {
+  font-size: 16px;
+  color: #344563;
+  font-family: 'inter', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-btn {
+  width: 45%;
+  background-color: #ff6b00;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }

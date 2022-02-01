@@ -28,7 +28,7 @@
     </script>
 </head>
 <body>
-  <main class="portfolio">
+  <!-- <main class="portfolio">
     <section class="headline-section">
       <header>
         <div class="navbar">
@@ -93,8 +93,10 @@
               <li class="tag rubytag">Ruby</li>
             </ul>
             <button type="button" class="probtn">See Project</button>
+            POP UP WINDOW
           </div>
         </div>
+
         <div class="project-cards">
           <div class="card card1">
             <div class="card-background">
@@ -324,8 +326,39 @@
       <li><a href="https://twitter.com/CarlyleChia" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter box four foot"></i></a></li>
       <li><a href="#"><i class="fab fa-medium-m box five foot"></i></a></li>
     </ul>
-  </main>
+  </main> -->
+  <button class="openPopUp">Click Me!</button>
+  <div class="modal-parent">
+      <div class="modal">
+          <div class="modal-head">
+              <div class="modal-title">Multi Post Stories</div>
+              <div class="close-icon">&times;</div>
+          </div>
+          <div class="modal-body">
+            <ul class="modal-list">
+              <li class="tag csstag">css</li>
+              <li class="tag htag">html</li>
+              <li class="tag bootag">bootstrap</li>
+            </ul>
+            <div class="modal-image"><img class="modal-img" src="./images/projectimg.png" alt=""></div>
+              <p class="modal-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat aut rem, doloremque ullam voluptates aliquam. Error provident rerum alias atque!</p>
+              <div class="buttons">
+                <button type="button" class="modal-btn see-live">
+                  <p class="btn-text">
+                    See live <i class="fas fa-mars"></i>
+                </p>
+                </button>
+                <button type="button" class="modal-btn see-github">
+                  <p>
+                    See source <i class="fab fa-github"></i>
+                  </p>
+                </button>
+                
+              </div>
+          </div>
+      </div>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
