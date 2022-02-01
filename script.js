@@ -14,11 +14,11 @@ dropDownContainer.style.visibility = 'hidden';
    icon.style.right = '0';
    icon.style.marginRight = '24px';
 
-   if (dropDownContainer.style.visibility == 'hidden') {
+   if (dropDownContainer.style.visibility === 'hidden') {
     dropDownContainer.style.visibility = 'visible';
 
    } 
-   else if (dropDownContainer.style.visibility == 'hidden') {
+   else if (dropDownContainer.style.visibility = 'hidden') {
       dropDownContainer.style.visibility = 'hidden';
 
     }
