@@ -1134,6 +1134,7 @@ body {
     background-size: 40%;
     height: 100vh;
     position: relative;
+    overflow-y: hidden;
   }
 
   .social-links {
@@ -2073,7 +2074,7 @@ body {
   }
 
   .navbar {
-    height: 50px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
