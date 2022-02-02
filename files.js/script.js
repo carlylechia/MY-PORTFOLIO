@@ -31,13 +31,3 @@ function hideMenu () {
     icon.classList.toggle('fa-bars');
 
 }
-
-// const parent = document.querySelector('.modal-parent'),
-//       btn = document.querySelector('button')
-//       X = document.querySelector('.close-icon');
-      
-// btn.addEventListener('click', show);
-
-// function show() {
-//   parent.style.display = 'block';
-// }
