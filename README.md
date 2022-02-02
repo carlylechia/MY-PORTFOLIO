@@ -43,3 +43,7 @@ Give a ⭐️ if you like this project!
 - I am grateful to Microverse for guiding me along the this project from the very start.
 - Big thank you to all my partners who have brainstormed with me and contributed in one way or another towards the realisation of this project.
 
+## LICENSE
+
+This project is MIT licensed.
+[link to the license is](https://github.com/carlylechia/MY-PORTFOLIO/blob/main/LICENSE).
