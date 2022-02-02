@@ -32,7 +32,7 @@ https://carlylechia.github.io/MY-PORTFOLIO/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/carlylechia/MY-PORTFOLIO/issues).
 
 ## Show your support
 
