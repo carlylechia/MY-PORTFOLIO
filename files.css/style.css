@@ -105,7 +105,7 @@ body {
     align-items: flex-start;
     padding: 120px 24px;
     height: 690px;
-    background: #1c1a19 url("images/Illustration.png");
+    background: #1c1a19 url("../images/Illustration.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: bottom;
@@ -437,165 +437,11 @@ body {
     color: green;
   }
 
-  .project-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    position: static;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  .card {
-    position: relative;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-bottom: 20px;
-  }
-
-  .card-background {
-    width: 80vw;
-    height: 386px;
-    min-width: 200px;
-    left: 0;
-    top: 0;
-  }
-
-  .img-placeholder {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
-  }
-
-  .bcg-settings {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: #262626;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 8vw;
-    height: 62vw;
-    bottom: 62px;
-    width: 70vw;
-    min-width: 216px;
-  }
-
-  .cardtitle {
-    position: static;
-    width: 70vw;
-    height: 10vw;
-    max-height: 80px;
-    font-family: "Crete Round", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 6vw;
-    line-height: 7vw;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-top: 5vw;
-    margin-bottom: 3vw;
-  }
-
-  .cardagraph {
-    height: 28vw;
-    max-height: 90px;
-    width: 65vw;
-  }
-
-  .cp-text {
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3.5vw;
-    line-height: 5vw;
-    color: #fff;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    position: static;
-    margin-bottom: 12px;
-    margin-top: 12px;
-  }
-
-  .cardtagbg {
-    background: rgb(255 255 255 / 24%);
-  }
-
-  .fullwidth {
-    width: 80vw;
-    min-width: 200px;
-    height: 48px;
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ff6b00;
-  }
-
-  .cardtags {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  .probtn1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    position: absolute;
-    width: 124px;
-    height: 48px;
-    left: calc(50% - 130px / 2);
-    top: calc(50% - 72px / 2);
-    background: #ff6b00;
-    border: 1px solid #ff6b00;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    color: #fff;
-    flex: none;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .probtn1:hover {
-    background: black;
-    transform: scale(1.2);
-  }
-
   .info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    background: #1c1a19 url("images/Frame.png");
+    background: #1c1a19 url("../images/Frame.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 475px;
@@ -1066,6 +912,105 @@ body {
 
   .foot {
     color: black;
+  }
+
+  .modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+
+  .modal {
+    background: white;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px 16px;
+    border: 1px solid black;
+    animation: 0.7s increase;
+  }
+
+  @keyframes increase {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .modal-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .close-icon {
+    font-size: 30px;
+    color: #67798e;
+  }
+
+  .modal-title {
+    position: static;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8vw;
+    line-height: 44px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    height: 10vh;
+    margin-top: -6px;
+  }
+
+  .modal-list {
+    display: flex;
+    list-style: none;
+    background: white;
+    margin-bottom: 10px;
+  }
+
+  .modal-list .tag {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: white;
+  }
+
+  .modal-img {
+    width: 99%;
+    margin-right: 16px;
+  }
+
+  .modal-description {
+    font-size: 16px;
+    color: #344563;
+    font-family: 'inter', sans-serif;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .modal-btn {
+    width: 45%;
+    background-color: #ff6b00;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
   }
 }
 
@@ -2138,9 +2083,13 @@ body {
     text-decoration: none;
   }
 
+  .headline-section {
+    width: 100vw;
+  }
+
   .headline {
     width: 100vw;
-    background: #1c1a19 url("images/Illustration-header.png");
+    background: #1c1a19 url(../images/Illustration-header.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 40%;
@@ -2203,7 +2152,6 @@ body {
   }
 
   h1 {
-    width: 25vw;
     margin: 15px 146px;
     font-family: "Crete Round", serif;
     color: #ff6b00;
@@ -2272,7 +2220,7 @@ body {
     width: 56vw;
     height: 2px;
     margin-right: 25px;
-    border: 1px solid grey;
+    border: 1px solid gray;
     position: absolute;
     right: 7vw;
     top: 33px;
@@ -2437,163 +2385,9 @@ body {
     color: red;
   }
 
-  .project-cards {
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100vw;
-    margin-top: 30px;
-  }
-
-  .card {
-    position: relative;
-    margin-bottom: 20px;
-    width: 31vw;
-    transition: transform 0.5s ease-out;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
-  }
-
-  .card-background {
-    width: 31vw;
-    height: 70vh;
-    min-width: 200px;
-    left: 0;
-    top: 0;
-  }
-
-  .img-placeholder {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
-  }
-
-  .bcg-settings {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: #262626;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 20px;
-    bottom: 62px;
-  }
-
-  .cardtitle {
-    position: static;
-    height: 80px;
-    padding-top: 35px;
-    font-family: "Crete Round", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .cardagraph {
-    max-height: 90px;
-    padding-top: 40px;
-  }
-
-  .cp-text {
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 24px;
-    color: #fff;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    position: static;
-    margin-bottom: 12px;
-    margin-top: 12px;
-  }
-
-  .cardtagbg {
-    background: rgb(255 255 255 / 24%);
-    color: #fff;
-  }
-
-  .fullwidth {
-    width: 31vw;
-    min-width: 200px;
-    height: 48px;
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ff6b00;
-  }
-
-  .fullwidth:hover {
-    background-color: #1c1a19;
-  }
-
-  .cardtags {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    flex: none;
-    padding-top: 30px;
-    order: 2;
-    flex-grow: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  .probtn1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    position: absolute;
-    width: 124px;
-    height: 48px;
-    left: calc(50% - 130px / 2);
-    top: calc(50% - 72px / 2);
-    background: #ff6b00;
-    border: 1px solid #ff6b00;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    color: #fff;
-    flex: none;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .probtn1:hover {
-    background: black;
-    transform: scale(1.2);
-  }
-
   .info {
     width: 100vw;
-    background: #1c1a19 url("images/Group.png");
+    background: #1c1a19 url("../images/Group.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 205px;

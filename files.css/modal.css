@@ -1,0 +1,391 @@
+/* mobile-first styling for the modal popups */
+.mobilehide {
+  display: none;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: #979493;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  overflow: scroll;
+}
+
+.popupcont {
+  background: #fff;
+  margin: 35px auto 24px auto;
+  border: 1px solid #dfe1e6;
+  width: 90%;
+}
+
+.popupcontheader {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupcontheader h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popupcontheader button {
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.popupcontheader button i {
+  font-size: 23px;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.popupcontlangs {
+  margin-bottom: 22px;
+}
+
+.popupcontlangs ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popupcontlangs ul li {
+  border: 1px solid gray;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  padding: 9px;
+}
+
+.popupcontbody {
+  margin: 24px 16px;
+}
+
+.popupcontbodyleft img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popupcontbodyright p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #344563;
+  margin-bottom: 13px;
+}
+
+.popupcontbodyrightbtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupcontbodyrightbtns button {
+  padding: 11px;
+  height: 46px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.popupcontbodyrightbtns button img {
+  padding-left: 8px;
+}
+
+.popup .popupcont .popupcontheader .closeModal {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.my-projects {
+  background: #fff;
+  width: 90vw;
+  padding-bottom: 32px;
+}
+
+.project {
+  margin: 10px 24px;
+  background: linear-gradient(180.45deg, rgba(50, 50, 38, 0) 0.65%, rgba(38, 38, 38, 0.9) 75.94%), url(../images/projectbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 386px;
+  position: relative;
+}
+
+.projectHeader {
+  padding: 84px 16px 12px 16px;
+  width: 300px;
+  height: 81px;
+  color: #fff;
+}
+
+.projectBody {
+  width: 295px;
+  height: 87px;
+  margin: 80px 16px 12px 16px;
+}
+
+.projectBody p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  width: 325px;
+}
+
+.projectBody ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.projectBody ul li {
+  list-style: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 12px;
+  position: static;
+}
+
+.projectHTML {
+  width: 56px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-right: 12px;
+}
+
+.projectHTML ul li {
+  width: 32px;
+  height: 20px;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.projectBootstrap {
+  width: 95px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-left: -24px;
+  margin-right: 12px;
+}
+
+.projectBootstrap ul li {
+  width: 71px;
+  height: 20px;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.projectRuby {
+  width: 61px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-right: 12px;
+  margin-left: -10px;
+}
+
+.projectRuby ul li {
+  width: 37px;
+  height: 20px;
+  padding: 10px 12px;
+  color: #fff;
+}
+
+.projectButton {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 48px;
+  background: #ff6b00;
+}
+
+.projectButton button {
+  width: 124px;
+  height: 48px;
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+/* styling for the buttons */
+button:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+button:active {
+  background: #ff6b00;
+  color: #fff;
+}
+
+button:disabled {
+  background: rgba(255, 255, 255, 0.24);
+  color: #000;
+}
+
+/* desktop version styling */
+
+@media screen and (min-width: 992px) {
+  .mobilehide {
+    display: block;
+    margin-left: 23px;
+  }
+
+  .desktophide {
+    display: none;
+  }
+
+  .popupcont {
+    margin-bottom: 45px;
+  }
+
+  .popupcontlangs ul {
+    justify-content: flex-start;
+    margin-left: 23px;
+  }
+
+  .popupcontlangs ul li {
+    margin-left: 20px;
+    list-style: none;
+  }
+
+  .popupcontbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .popupcontbodyleft img {
+    margin-left: 25px;
+    margin-bottom: 13px;
+  }
+
+  .popupcontbodyright p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2vw;
+    width: 35vw;
+    margin-left: 43px;
+    height: 20vw;
+  }
+
+  .popupcontbodyrightbtns {
+    justify-content: flex-start;
+    padding-top: 4.4vw;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .popupcontbodyrightbtns button {
+    margin-left: 20px;
+  }
+
+  .my-projects {
+    margin: 30px 1vw 5vw 5vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projectButton {
+    display: none;
+  }
+
+  .project {
+    height: 435px;
+    width: 25vw;
+    border-radius: 0;
+    transition: transform 0.5s ease-out;
+  }
+
+  .project:hover .projectButton {
+    display: block;
+  }
+
+  .project:hover > * {
+    display: none;
+  }
+
+  .project:hover {
+    background: url(../images/projecthover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  .projectHeader h3 {
+    width: 337px;
+    height: 81px;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 85px auto 24px auto;
+  }
+
+  .projectBody p {
+    position: relative;
+    margin: 180px auto 24px auto;
+    width: 337px;
+    height: 72px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
