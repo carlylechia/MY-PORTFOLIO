@@ -2171,7 +2171,7 @@ body {
   }
 
   .navbar {
-    height: 50px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2300,7 +2300,6 @@ body {
   }
 
   h1 {
-    width: 25vw;
     margin: 15px 146px;
     font-family: "Crete Round", serif;
     color: #ff6b00;
@@ -2532,160 +2531,6 @@ body {
   .probtn:disabled {
     background-color: #fff;
     color: red;
-  }
-
-  .project-cards {
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100vw;
-    margin-top: 30px;
-  }
-
-  .card {
-    position: relative;
-    margin-bottom: 20px;
-    width: 31vw;
-    transition: transform 0.5s ease-out;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
-  }
-
-  .card-background {
-    width: 31vw;
-    height: 70vh;
-    min-width: 200px;
-    left: 0;
-    top: 0;
-  }
-
-  .img-placeholder {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 61.94%), url("images/backgroundimg.png");
-  }
-
-  .bcg-settings {
-    position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    background: #262626;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 20px;
-    bottom: 62px;
-  }
-
-  .cardtitle {
-    position: static;
-    height: 80px;
-    padding-top: 35px;
-    font-family: "Crete Round", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .cardagraph {
-    max-height: 90px;
-    padding-top: 40px;
-  }
-
-  .cp-text {
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 24px;
-    color: #fff;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    position: static;
-    margin-bottom: 12px;
-    margin-top: 12px;
-  }
-
-  .cardtagbg {
-    background: rgb(255 255 255 / 24%);
-    color: #fff;
-  }
-
-  .fullwidth {
-    width: 31vw;
-    min-width: 200px;
-    height: 48px;
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ff6b00;
-  }
-
-  .fullwidth:hover {
-    background-color: #1c1a19;
-  }
-
-  .cardtags {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    flex: none;
-    padding-top: 30px;
-    order: 2;
-    flex-grow: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  .probtn1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    position: absolute;
-    width: 124px;
-    height: 48px;
-    left: calc(50% - 130px / 2);
-    top: calc(50% - 72px / 2);
-    background: #ff6b00;
-    border: 1px solid #ff6b00;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    color: #fff;
-    flex: none;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .probtn1:hover {
-    background: black;
-    transform: scale(1.2);
   }
 
   .info {

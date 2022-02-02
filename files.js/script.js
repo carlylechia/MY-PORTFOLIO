@@ -32,12 +32,12 @@ function hideMenu () {
 
 }
 
-const parent = document.querySelector('.modal-parent'),
-      btn = document.querySelector('button')
-      X = document.querySelector('.close-icon');
+// const parent = document.querySelector('.modal-parent'),
+//       btn = document.querySelector('button')
+//       X = document.querySelector('.close-icon');
       
-btn.addEventListener('click', show);
+// btn.addEventListener('click', show);
 
-function show() {
-  parent.style.display = 'block';
-}
+// function show() {
+//   parent.style.display = 'block';
+// }
