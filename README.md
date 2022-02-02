@@ -7,7 +7,7 @@
 ![home](/home.png)
 
 # Deployment
-https://carlylechia.github.io/MY-PORTFOLIO/
+[click here](https://carlylechia.github.io/MY-PORTFOLIO/) to go to my portfolio site.
 
 ## Built With
 
