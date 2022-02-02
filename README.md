@@ -46,4 +46,4 @@ Give a ⭐️ if you like this project!
 ## LICENSE
 
 This project is MIT licensed.
-[link to the license is](https://github.com/carlylechia/MY-PORTFOLIO/blob/main/LICENSE).
+[This](https://github.com/carlylechia/MY-PORTFOLIO/blob/main/LICENSE) is the link to the license.
