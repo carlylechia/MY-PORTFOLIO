@@ -34,8 +34,8 @@ body {
   header {
     z-index: -1;
   }
-
-  .headline {
+  
+  .headline-section {
     max-width: 100vw;
   }
 
@@ -913,7 +913,7 @@ body {
   .foot {
     color: black;
   }
-
+  
   .modal-parent {
     position: fixed;
     top: 0;
@@ -1011,6 +1011,7 @@ body {
     font-weight: bold;
     font-size: 16px;
   }
+
 }
 
 @media screen and (min-width: 620px) and (max-width: 992px) {
@@ -1078,6 +1079,7 @@ body {
     background-size: 40%;
     height: 100vh;
     position: relative;
+    overflow-y: hidden;
   }
 
   .social-links {
@@ -2017,7 +2019,7 @@ body {
   }
 
   .navbar {
-    height: 55px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2082,6 +2084,10 @@ body {
   }
 
   .headline-section {
+    width: 100vw;
+  }
+  
+  .headline {
     width: 100vw;
     background: #1c1a19 url(../images/Illustration-header.png);
     background-repeat: no-repeat;
@@ -2214,7 +2220,7 @@ body {
     width: 56vw;
     height: 2px;
     margin-right: 25px;
-    border: 1px solid grey;
+    border: 1px solid gray;
     position: absolute;
     right: 7vw;
     top: 33px;
