@@ -436,12 +436,13 @@ body {
     background-color: black;
     color: green;
   }
-  
+
   .info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    background: #1c1a19 url("images/Frame.png");
+    background: #1c1a19;
+    background-image:  url("images/Frame (1).png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 475px;
@@ -2381,10 +2382,8 @@ body {
 
   .info {
     width: 100vw;
-    background: #1c1a19 url("images/Group.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: 205px;
+    background: #1c1a19;
+    background-image: url(images/Group.png);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;

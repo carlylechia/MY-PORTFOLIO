@@ -81,7 +81,7 @@ function modalpopup() {
       <div class="popupcontheader">
         <h2 class="desktophide">${projectList[projectList.length - 1].title}</h2>
         <h2 class="mobilehide">Keeping track of hundreds  of components website</h2>
-        <button id="closeModal" class="closeModal">${projectList[projectList.length - 1].closebtn}</button>
+        <button id="closeModal" class="closeModal" draggable = "true">${projectList[projectList.length - 1].closebtn}</button>
       </div>
       <div class="popupcontlangs">
         <ul>

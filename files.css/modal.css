@@ -44,10 +44,14 @@
   background-color: #fff;
   cursor: pointer;
   color: #000;
+  border: 1px solid #fff;
 }
 
 .popupcontheader button i {
   font-size: 23px;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 .popupcontlangs {
@@ -114,6 +118,11 @@
 
 .popupcontbodyrightbtns button img {
   padding-left: 8px;
+}
+
+.popup .popupcont .popupcontheader .closeModal {
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 
 .my-projects {
@@ -315,7 +324,7 @@ button:disabled {
   .popupcontbodyrightbtns {
     justify-content: flex-start;
     position: absolute;
-    bottom: 17%;
+    bottom: 23%;
     margin-left: 20px;
   }
 
