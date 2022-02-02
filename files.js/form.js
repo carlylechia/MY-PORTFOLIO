@@ -1,0 +1,17 @@
+const email = document.getElementById('email');
+const error = document.getElementById('warning');
+const form = document.getElementById('formawesome');
+
+function formValidate() {
+  if (email.value !== email.value.toLowerCase()) {
+    error.innerHTML = `Your email is not in lowercase. Consider using ${email.value.toLowerCase()} instead`;
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener('submit', (postIt) => {
+  if (!formValidate()) {
+    postIt.preventDefault();
+  }
+});

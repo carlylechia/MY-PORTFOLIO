@@ -314,15 +314,16 @@ button:disabled {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 2vw;
     width: 35vw;
     margin-left: 43px;
+    height: 20vw;
   }
 
   .popupcontbodyrightbtns {
     justify-content: flex-start;
-    position: absolute;
-    bottom: 23%;
+    padding-top: 4.4vw;
+    margin-top: 30px;
     margin-left: 20px;
   }
 
