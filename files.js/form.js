@@ -15,3 +15,16 @@ form.addEventListener('submit', (postIt) => {
     postIt.preventDefault();
   }
 });
+
+let localStore = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+if (localStorage.getItem('localStore') != null) {
+  localStore = JSON.parse(localStorage.getItem('localStore'));
+  form.username.value = localStore.fullName;
+  form.email.value = localStore.email;
+  form.msg.value = localStore.message;
+}
