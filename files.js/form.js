@@ -15,3 +15,23 @@ form.addEventListener('submit', (postIt) => {
     postIt.preventDefault();
   }
 });
+
+let localStore = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+if (localStorage.getItem('localStore') != null) {
+  localStore = JSON.parse(localStorage.getItem('localStore'));
+  form.username.value = localStore.fullName;
+  form.email.value = localStore.email;
+  form.msg.value = localStore.message;
+}
+
+form.addEventListener('change', () => {
+  localStore.fullName = form.username.value;
+  localStore.email = form.email.value;
+  localStore.message = form.msg.value;
+  localStorage.setItem('localStore', JSON.stringify(localStore));
+});
