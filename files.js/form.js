@@ -28,3 +28,10 @@ if (localStorage.getItem('localStore') != null) {
   form.email.value = localStore.email;
   form.msg.value = localStore.message;
 }
+
+form.addEventListener('change', () => {
+  localStore.fullName = form.username.value;
+  localStore.email = form.email.value;
+  localStore.message = form.msg.value;
+  localStorage.setItem('localStore', JSON.stringify(localStore));
+});
