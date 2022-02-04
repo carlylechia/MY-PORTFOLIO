@@ -6,7 +6,7 @@
 
 ![home](/home.png)
 
-![Desktop-home](/Desktop-home.png)
+![Desktop-home](Desktop-home.png)
 
 # Deployment
 [click here](https://carlylechia.github.io/MY-PORTFOLIO/) to go to my portfolio site.
