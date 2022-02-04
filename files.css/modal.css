@@ -310,20 +310,21 @@ button:disabled {
     margin-bottom: 13px;
   }
 
+  .popupcontbodyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .popupcontbodyright p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
-    width: 35vw;
-    margin-left: 43px;
   }
 
   .popupcontbodyrightbtns {
     justify-content: flex-start;
-    position: absolute;
-    bottom: 23%;
-    margin-left: 20px;
+    margin-bottom: 17px;
   }
 
   .popupcontbodyrightbtns button {
