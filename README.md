@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MY PORTFOLIO: My responsive portfolio site
+# MY PORTFOLIO: My responsive Personal Portfolio Site
 
-> As the name implies, this project is the first Microverse portfolio project of many which successively works towards buillding a greta portfolio website according to the Figma templates.
+> This project titled' **My Portfolio** is principally developed by me, *Chia Carlyle*, under the @Microverseinc curriculum. It is my portfolio site which contains information about the author and his resumè as a software developer. Click the link in the deployment to check it out. You can also view the [source code](https://github.com/carlylechia/MY-PORTFOLIO/). I am happy to welcome any comments, issues, contributions from everyone. Thank you for checking out `my portfolio`.
 
 ![home](/home.png)
 
