@@ -420,11 +420,11 @@ body {
     padding: 12px;
     background: #ff6b00;
     border: 1px solid #ff6b00;
-    position: static;
-    width: 124px;
+    width: 136px;
     height: 48px;
     font-family: "Inter", sans-serif;
     font-style: normal;
+    font-weight: 700;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
