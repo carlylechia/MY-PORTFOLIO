@@ -51,13 +51,18 @@ body {
 
   .logo {
     position: absolute;
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: bold;
     font-size: 12px;
     line-height: 24px;
     text-align: center;
     margin-left: 25px;
+    font-family: "InaiMathi", serif;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 90%;
+    padding: 10px;
+    box-shadow: 2px 2px black;
   }
 
   .fa-bars {
@@ -65,6 +70,10 @@ body {
     position: absolute;
     right: 0;
     margin-right: 24px;
+  }
+
+  .menu {
+    margin-bottom: 20px;
   }
 
   .mobile-dropdown {
