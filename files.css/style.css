@@ -65,6 +65,11 @@ body {
     box-shadow: 2px 2px black;
   }
 
+  .navbar .logo a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   .fa-bars {
     color: white;
     position: absolute;
@@ -514,6 +519,7 @@ body {
     font-size: 17px;
     line-height: 24px;
     color: #fff;
+    white-space: nowrap;
     cursor: pointer;
     transition: transform 0.5s ease-out;
   }
