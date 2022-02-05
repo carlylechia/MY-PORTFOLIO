@@ -2060,8 +2060,16 @@ body {
 
   .logo:hover {
     transform: scale(1.7) rotate(360deg);
-    color: black;
     background-color: #fff;
+  }
+
+  .navbar .logo a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar .logo a:hover {
+    color: black;
   }
 
   .menu {
