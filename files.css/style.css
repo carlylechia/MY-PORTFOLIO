@@ -65,6 +65,17 @@ body {
     box-shadow: 2px 2px black;
   }
 
+  .mobile-dropdown ul li a {
+    text-decoration: none;
+    font-family: "inter", serif;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 15px 24px;
+    color: #fff5e1;
+    font-weight: bold;
+    font-style: normal;
+  }
+
   .navbar .logo a {
     text-decoration: none;
     color: #fff;
@@ -89,17 +100,6 @@ body {
     height: 100%;
     background: #3c3a39;
     visibility: hidden;
-  }
-
-  .mobile-dropdown ul li a {
-    text-decoration: none;
-    font-family: "inter", serif;
-    font-size: 32px;
-    line-height: 44px;
-    padding: 15px 24px;
-    color: #fff5e1;
-    font-weight: bold;
-    font-style: normal;
   }
 
   .drop-option {
@@ -2069,6 +2069,11 @@ body {
     background-color: #fff;
   }
 
+  .topdesk .headnum a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .navbar .logo a {
     text-decoration: none;
     color: #fff;
@@ -2099,11 +2104,6 @@ body {
 
   .headnum:hover {
     transform: translateY(-10px);
-  }
-
-  .topdesk .headnum a {
-    color: #fff;
-    text-decoration: none;
   }
 
   .headline-section {
