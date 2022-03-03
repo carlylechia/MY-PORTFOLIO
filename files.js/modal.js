@@ -6,9 +6,9 @@ popUp.classList.add('popup');
 
 const projectList = [
   {
-    id: 'proj1',
-    projectHeader: 'Profesional Art Printing Data',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    id: 'proj2',
+    projectHeader: 'The Vision Straight Discovery Project',
+    projectDesc: 'This project is about a fictional show based on a real life musical crew of friends in Bamenda, Cameroon. check it out.',
     projectHtml: 'html',
     projectbootstrap: 'bootstrap',
     projectRuby: 'ruby',
@@ -122,6 +122,59 @@ document.addEventListener('click', (e) => {
 });
 featuredbtn.onclick = modalpopup;
 
+const popUp2 = document.createElement('div');
+popUp2.classList.add('popup');
+
+function modalpopup2() {
+  popUp2.style.display = 'block';
+  body.appendChild(popUp2);
+  const showing = `
+  <div class="popupcont">
+      <div class="popupcontheader">
+        <h2 class="desktophide">Vision-Straight Discovery Project</h2>
+        <h2 class="mobilehide">Vision-Straight Discovery Project</h2>
+        <button id="closeModal" class="closeModal" draggable = "true">${projectList[projectList.length - 1].closebtn}</button>
+      </div>
+      <div class="popupcontlangs">
+        <ul>
+          <li>${projectList[projectList.length - 1].html}</li>
+          <li>${projectList[projectList.length - 1].bootstrap}</li>
+          <li>${projectList[projectList.length - 1].ruby}</li>
+        </ul>
+      </div>
+      <div class="popupcontbody">
+        <div class="popupcontbodyleft">
+          <img src="../images/vsb-home.png" alt="image">
+        </div>
+        <div class="popupcontbodyright">
+          <p class="desktophide">${projectList[projectList.length - 1].projectDesc}</p>
+          <p class="mobilehide">
+          This project is based on a fictitious musical talent event named above, organized by the Vision Straight Brothers (VSB) crew in Bamenda, Cameroon. This is to attest that I, Chia Carlyle, have completed the first module of the Microverse curriculum called, The Portal.
+          Click the link in the Live Demo section to check it out.</p>
+          <div class="popupcontbodyrightbtns">
+          <a href="https://carlylechia.github.io/Vision-Straight/"><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href="https://github.com/carlylechia/Vision-Straight.git"><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  popUp2.innerHTML = showing;
+  body.appendChild(popUp2);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.id === 'closeModal') {
+      popUp2.style.display = 'none';
+    }
+  });
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'proj2') {
+    modalpopup2();
+  }
+});
+
 const projectsSection = document.querySelector('.my-projects');
 function loopdiv() {
   projectsSection.innerHTML = '';
@@ -155,6 +208,9 @@ function loopdiv() {
            </div>
            <div class="projectButton openProject">
              <button id="proj1" class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
+           </div>
+           <div class="projectButton openProject">
+             <button id="proj2" class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
            </div>
       </div>`;
   }
