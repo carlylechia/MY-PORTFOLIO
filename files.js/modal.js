@@ -41,6 +41,18 @@ const modalList = [
     projectbtnlive: 'https://saied2035.github.io/movie-app/',
     projectbtnsource: 'https://github.com/saied2035/movie-app.git',
   },
+  {
+    id: 'proj4',
+    title: 'Covid Cop',
+    closebtn: '<i id="closeModal" class="fa fa-times" aria-hidden="true"></i>',
+    html: 'html',
+    bootstrap: 'CSS',
+    ruby: 'React/Redux',
+    projectImage: '../images/covid-laptop.png',
+    projectDesc: 'This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet. This Api is updated several times every day, and so is the app. The app makes search easy with the search bar which displays data for any country which matches the search result. It is highly responsive and looks good on any screen.',
+    projectbtnlive: 'https://covid-cop.netlify.app/',
+    projectbtnsource: 'https://github.com/carlylechia/COVID911.git',
+  },
 ];
 
 function modalpopup() {
@@ -90,11 +102,6 @@ document.addEventListener('click', (e) => {
 });
 featuredbtn.onclick = modalpopup;
 
-// document.addEventListener('click', (e) => {
-//   if (e.target.id === 'proj4') {
-//     modalpopup4();
-//   }
-// });
 // document.addEventListener('click', (e) => {
 //   if (e.target.id === 'proj5') {
 //     modalpopup5();
@@ -155,6 +162,11 @@ function modalpopup2() {
     }
   });
 }
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'proj2') {
+    modalpopup2();
+  }
+});
 
 const popUp3 = document.createElement('div');
 popUp3.classList.add('popup');
@@ -206,8 +218,52 @@ document.addEventListener('click', (e) => {
   }
 });
 
+const popUp4 = document.createElement('div');
+popUp4.classList.add('popup');
+
+function modalpopup4() {
+  popUp4.style.display = 'block';
+  body.appendChild(popUp4);
+  const showing = `
+  <div class="popupcont">
+      <div class="popupcontheader">
+        <h2 class="desktophide">${modalList[3].title}</h2>
+        <h2 class="mobilehide">${modalList[3].title}</h2>
+        <button id="closeModal" class="closeModal" draggable = "true">${modalList[2].closebtn}</button>
+      </div>
+      <div class="popupcontlangs">
+        <ul>
+          <li>${modalList[3].html}</li>
+          <li>${modalList[3].bootstrap}</li>
+          <li>${modalList[3].ruby}</li>
+        </ul>
+      </div>
+      <div class="popupcontbody">
+        <div class="popupcontbodyleft">
+          <img src="${modalList[3].projectImage}" alt="image">
+        </div>
+        <div class="popupcontbodyright">
+          <p class="desktophide">${modalList[3].projectDesc}</p>
+          <p class="mobilehide">${modalList[3].projectDesc}</p>
+          <div class="popupcontbodyrightbtns">
+          <a href=${modalList[3].projectbtnlive}><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href=${modalList[3].projectbtnsource}><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  popUp4.innerHTML = showing;
+  body.appendChild(popUp4);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.id === 'closeModal') {
+      popUp4.style.display = 'none';
+    }
+  });
+}
 document.addEventListener('click', (e) => {
-  if (e.target.id === 'proj2') {
-    modalpopup2();
+  if (e.target.id === 'proj4') {
+    modalpopup4();
   }
 });
