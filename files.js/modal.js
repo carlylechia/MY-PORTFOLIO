@@ -19,7 +19,7 @@ const modalList = [
   },
   {
     id: 'proj2',
-    title: 'The Vision Straight Discovery Show',
+    title: 'The Vision Straight Discovery Project',
     closebtn: '<i id="closeModal" class="fa fa-times" aria-hidden="true"></i>',
     html: 'html',
     bootstrap: 'bootstrap',

@@ -66,7 +66,7 @@ function loopdiv() {
   projectsSection.innerHTML = '';
   for (let i = 0; i < projectList.length; i += 1) {
     projectsSection.innerHTML = `${projectsSection.innerHTML}
-  <div class="project">
+      <div class="project">
            <div class="projectHeader">
              <h3>${projectList[i].projectHeader}</h3>
            </div>
@@ -98,6 +98,14 @@ function loopdiv() {
       </div>`;
   }
 }
+
+// const projectBg = () => {
+//   const card = document.querySelector('.project');
+//   for (let i = 0; i < projectList.length; i += 1) {
+//     card.style.backgroundImage = URL(projectList[i].projectImage);
+//   }
+// };
+// projectBg();
 
 window.addEventListener('load', () => {
   loopdiv();

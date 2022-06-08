@@ -1405,7 +1405,7 @@ body {
     color: red;
   }
 
-  .project-cards {
+  /* .project-cards {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: row;
@@ -1413,16 +1413,16 @@ body {
     flex-wrap: wrap;
     width: 100vw;
     margin-top: 30px;
-  }
+  } */
 
-  .card {
+  /* .card {
     position: relative;
     margin-bottom: 20px;
     width: 45.5vw;
     transition: transform 0.5s ease-out;
-  }
+  } */
 
-  .card:hover {
+  /* .card:hover {
     transform: scale(1.1);
   }
 
@@ -1472,9 +1472,9 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
-  }
+  } */
 
-  .cardagraph {
+  /* .cardagraph {
     max-height: 90px;
   }
 
@@ -1536,12 +1536,12 @@ body {
     flex: none;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
-  }
+  } */
 
-  .probtn1:hover {
+  /* .probtn1:hover {
     background: black;
     transform: scale(1.2);
-  }
+  } */
 
   .info {
     width: 100vw;
