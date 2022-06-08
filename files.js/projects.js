@@ -11,9 +11,9 @@ const projectList = [
   },
   {
     id: 'proj3',
-    projectImage: '',
-    projectHeader: 'Project title',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    projectImage: '../images/movies-home.png',
+    projectHeader: 'Movies2Watch',
+    projectDesc: 'We built a movie app that sends and receives data to and from not just one, but two APIs to display a large array of tv shows and allow for engagements.',
     projectHtml: 'html',
     projectbootstrap: 'bootstrap',
     projectRuby: 'ruby',

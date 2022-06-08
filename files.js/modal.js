@@ -29,6 +29,18 @@ const modalList = [
     projectbtnlive: 'https://carlylechia.github.io/Vision-Straight/',
     projectbtnsource: 'https://github.com/carlylechia/Vision-Straight.git',
   },
+  {
+    id: 'proj3',
+    title: 'Movies2Watch',
+    closebtn: '<i id="closeModal" class="fa fa-times" aria-hidden="true"></i>',
+    html: 'html',
+    bootstrap: 'bootstrap',
+    ruby: 'Ruby On Rails',
+    projectImage: '../images/movies-home.png',
+    projectDesc: ' This CAPSTONE PROJECT is to attest that the members of this team of authors have completed the second module of the Microverse curriculum called, JavaScript and Networking. We built a movie app that sends and receives data to and from not just one, but two APIs to display a large array of tv shows and allow for engagements: likes, comments, and reservations for each and every show. It also displays indepth information about each show, alongside a rating to make it easy for anyone who is looking for a great show to relax on.',
+    projectbtnlive: 'https://saied2035.github.io/movie-app/',
+    projectbtnsource: 'https://github.com/saied2035/movie-app.git',
+  },
 ];
 
 function modalpopup() {
@@ -55,8 +67,8 @@ function modalpopup() {
           <p class="desktophide">${modalList[0].projectDesc}</p>
           <p class="mobilehide">${modalList[0].projectDesc}</p>
           <div class="popupcontbodyrightbtns">
-          <a href="https://carlylechia.github.io/MY-PORTFOLIO/"><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
-          <a href="https://github.com/carlylechia/MY-PORTFOLIO.git"><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          <a href=${modalList[0].projectbtnlive}><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href=${modalList[0].projectbtnsource}><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
           </div>
         </div>
       </div>
@@ -78,11 +90,6 @@ document.addEventListener('click', (e) => {
 });
 featuredbtn.onclick = modalpopup;
 
-// document.addEventListener('click', (e) => {
-//   if (e.target.id === 'proj3') {
-//     modalpopup3();
-//   }
-// });
 // document.addEventListener('click', (e) => {
 //   if (e.target.id === 'proj4') {
 //     modalpopup4();
@@ -132,8 +139,8 @@ function modalpopup2() {
           <p class="desktophide">${modalList[1].projectDesc}</p>
           <p class="mobilehide">${modalList[1].projectDesc}</p>
           <div class="popupcontbodyrightbtns">
-          <a href="https://carlylechia.github.io/MY-PORTFOLIO/"><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
-          <a href="https://github.com/carlylechia/MY-PORTFOLIO.git"><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          <a href=${modalList[1].projectbtnlive}><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href=${modalList[1].projectbtnsource}><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
           </div>
         </div>
       </div>
@@ -148,6 +155,56 @@ function modalpopup2() {
     }
   });
 }
+
+const popUp3 = document.createElement('div');
+popUp3.classList.add('popup');
+
+function modalpopup3() {
+  popUp3.style.display = 'block';
+  body.appendChild(popUp3);
+  const showing = `
+  <div class="popupcont">
+      <div class="popupcontheader">
+        <h2 class="desktophide">${modalList[2].title}</h2>
+        <h2 class="mobilehide">${modalList[2].title}</h2>
+        <button id="closeModal" class="closeModal" draggable = "true">${modalList[2].closebtn}</button>
+      </div>
+      <div class="popupcontlangs">
+        <ul>
+          <li>${modalList[2].html}</li>
+          <li>${modalList[2].bootstrap}</li>
+          <li>${modalList[2].ruby}</li>
+        </ul>
+      </div>
+      <div class="popupcontbody">
+        <div class="popupcontbodyleft">
+          <img src="${modalList[2].projectImage}" alt="image">
+        </div>
+        <div class="popupcontbodyright">
+          <p class="desktophide">${modalList[2].projectDesc}</p>
+          <p class="mobilehide">${modalList[2].projectDesc}</p>
+          <div class="popupcontbodyrightbtns">
+          <a href=${modalList[2].projectbtnlive}><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href=${modalList[2].projectbtnsource}><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  popUp3.innerHTML = showing;
+  body.appendChild(popUp3);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.id === 'closeModal') {
+      popUp3.style.display = 'none';
+    }
+  });
+}
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'proj3') {
+    modalpopup3();
+  }
+});
 
 document.addEventListener('click', (e) => {
   if (e.target.id === 'proj2') {
