@@ -15,7 +15,16 @@ const projectList = [
     projectButton: 'See Project',
   },
   {
-    id: 'proj1',
+    id: 'proj3',
+    projectHeader: 'Which project will be next?',
+    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    projectHtml: 'html',
+    projectbootstrap: 'bootstrap',
+    projectRuby: 'ruby',
+    projectButton: 'See Project',
+  },
+  {
+    id: 'proj4',
     projectHeader: 'Profesional Art Printing Data',
     projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
     projectHtml: 'html',
@@ -24,34 +33,7 @@ const projectList = [
     projectButton: 'See Project',
   },
   {
-    id: 'proj1',
-    projectHeader: 'Profesional Art Printing Data',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
-    projectHtml: 'html',
-    projectbootstrap: 'bootstrap',
-    projectRuby: 'ruby',
-    projectButton: 'See Project',
-  },
-  {
-    id: 'proj1',
-    projectHeader: 'Profesional Art Printing Data',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
-    projectHtml: 'html',
-    projectbootstrap: 'bootstrap',
-    projectRuby: 'ruby',
-    projectButton: 'See Project',
-  },
-  {
-    id: 'proj1',
-    projectHeader: 'Profesional Art Printing Data',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
-    projectHtml: 'html',
-    projectbootstrap: 'bootstrap',
-    projectRuby: 'ruby',
-    projectButton: 'See Project',
-  },
-  {
-    id: 'proj1',
+    id: 'proj5',
     projectHeader: 'Profesional Art Printing Data',
     projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
     projectHtml: 'html',
@@ -61,6 +43,24 @@ const projectList = [
   },
   {
     id: 'proj6',
+    projectHeader: 'Profesional Art Printing Data',
+    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    projectHtml: 'html',
+    projectbootstrap: 'bootstrap',
+    projectRuby: 'ruby',
+    projectButton: 'See Project',
+  },
+  {
+    id: 'proj7',
+    projectHeader: 'Profesional Art Printing Data',
+    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    projectHtml: 'html',
+    projectbootstrap: 'bootstrap',
+    projectRuby: 'ruby',
+    projectButton: 'See Project',
+  },
+  {
+    id: 'proj1',
     title: 'Multi Post Stories',
     closebtn: '<i id="closeModal" class="fa fa-times" aria-hidden="true"></i>',
     html: 'html',
@@ -76,26 +76,27 @@ const projectList = [
 function modalpopup() {
   popUp.style.display = 'block';
   body.appendChild(popUp);
-  const showing = `
+  for (let i = 0; i < projectList.length; i += 1) {
+    const showing = `
   <div class="popupcont">
       <div class="popupcontheader">
-        <h2 class="desktophide">${projectList[projectList.length - 1].title}</h2>
+        <h2 class="desktophide">${projectList[i].title}</h2>
         <h2 class="mobilehide">Keeping track of hundreds  of components website</h2>
-        <button id="closeModal" class="closeModal" draggable = "true">${projectList[projectList.length - 1].closebtn}</button>
+        <button id="closeModal" class="closeModal" draggable = "true">${projectList[i].closebtn}</button>
       </div>
       <div class="popupcontlangs">
         <ul>
-          <li>${projectList[projectList.length - 1].html}</li>
-          <li>${projectList[projectList.length - 1].bootstrap}</li>
-          <li>${projectList[projectList.length - 1].ruby}</li>
+          <li>${projectList[i].html}</li>
+          <li>${projectList[i].bootstrap}</li>
+          <li>${projectList[i].ruby}</li>
         </ul>
       </div>
       <div class="popupcontbody">
         <div class="popupcontbodyleft">
-          <img src="${projectList[projectList.length - 1].projectImage}" alt="image">
+          <img src="${projectList[i].projectImage}" alt="image">
         </div>
         <div class="popupcontbodyright">
-          <p class="desktophide">${projectList[projectList.length - 1].projectDesc}</p>
+          <p class="desktophide">${projectList[i].projectDesc}</p>
           <p class="mobilehide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
           <div class="popupcontbodyrightbtns">
           <a href="https://carlylechia.github.io/MY-PORTFOLIO/"><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
@@ -105,9 +106,9 @@ function modalpopup() {
       </div>
     </div>
   `;
-  popUp.innerHTML = showing;
-  body.appendChild(popUp);
-
+    popUp.innerHTML = showing;
+    body.appendChild(popUp);
+  }
   document.addEventListener('click', (e) => {
     if (e.target.id === 'closeModal') {
       popUp.style.display = 'none';
@@ -207,10 +208,10 @@ function loopdiv() {
              </ul>
            </div>
            <div class="projectButton openProject">
-             <button id="proj1" class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
+             <button id=${projectList[i].id} class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
            </div>
            <div class="projectButton openProject">
-             <button id="proj2" class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
+             <button id=${projectList[i].id} class="testbtnn" onClick="loopdiv()">${projectList[i].projectButton}</button>
            </div>
       </div>`;
   }
