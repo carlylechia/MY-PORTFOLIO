@@ -2315,14 +2315,14 @@ body {
     cursor: pointer;
     margin-right: 6px;
     max-height: 40px;
-    max-width: 85px;
+    max-width: 100px;
     font-size: 20px;
   }
 
   .csstag {
-    padding: 7px 28px;
+    padding: 7px 12px;
     position: static;
-    width: 12vw;
+    width: 5vw;
     height: 10vw;
     background: #fff;
     border: 1px solid #8993a4;
@@ -2333,9 +2333,9 @@ body {
   }
 
   .htag {
-    padding: 7px 22px;
+    padding: 7px 5px;
     position: static;
-    width: 13vw;
+    width: 5.5vw;
     height: 10vw;
     background: #fff;
     border: 1px solid #8993a4;

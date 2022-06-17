@@ -25,7 +25,7 @@ const projectList = [
     projectHeader: 'Covid911',
     projectDesc: 'This web application fetches an API and displays live statistics about covid19 new cases in almost all countries on the planet.',
     projectHtml: 'html',
-    projectbootstrap: 'React',
+    projectbootstrap: 'ReactJS',
     projectRuby: 'CSS',
     projectButton: 'See Project',
   },
