@@ -359,11 +359,11 @@ button:disabled {
   }
 
   .project:hover {
-    background: url(../images/projecthover.png);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
     transform: scale(1.1);
+    background-color: transparent;
   }
 
   .projectHeader h3 {
@@ -372,7 +372,6 @@ button:disabled {
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: normal;
-    color: #fff;
     font-size: 32px;
     line-height: 44px;
     margin: 85px auto 24px auto;
