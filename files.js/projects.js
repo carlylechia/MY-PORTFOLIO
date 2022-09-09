@@ -31,12 +31,12 @@ const projectList = [
   },
   {
     id: 'proj5',
-    projectImage: '',
-    projectHeader: 'Profesional Art Printing Data',
-    projectDesc: 'A daily selection of privately personalized reads; no accounts orsign-ups required. has been the industrys standard',
+    projectImage: '../images/categories.png',
+    projectHeader: 'Budget_R',
+    projectDesc: 'A mobile application which helps you manage your budget and transactions. Built with Ruby-on-Rails.',
     projectHtml: 'html',
-    projectbootstrap: 'bootstrap',
-    projectRuby: 'ruby',
+    projectbootstrap: 'Ruby/Rails',
+    projectRuby: 'CSS3',
     projectButton: 'See Project',
   },
   {
@@ -66,7 +66,7 @@ function loopdiv() {
   projectsSection.innerHTML = '';
   for (let i = 0; i < projectList.length; i += 1) {
     projectsSection.innerHTML = `${projectsSection.innerHTML}
-      <div class="project">
+      <div class="project" style="background-image: linear-gradient(rgba(23, 1, 165, 0.8), rgba(209, 53, 49, 0.4)), url(${projectList[i].projectImage})">
            <div class="projectHeader">
              <h3>${projectList[i].projectHeader}</h3>
            </div>

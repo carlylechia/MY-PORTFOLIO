@@ -53,6 +53,18 @@ const modalList = [
     projectbtnlive: 'https://covid-cop.netlify.app/',
     projectbtnsource: 'https://github.com/carlylechia/COVID911.git',
   },
+  {
+    id: 'proj5',
+    title: 'Budget_R',
+    closebtn: '<i id="closeModal" class="fa fa-times" aria-hidden="true"></i>',
+    html: 'html',
+    bootstrap: 'CSS',
+    ruby: 'Ruby/Rails',
+    projectImage: '../images/categories.png',
+    projectDesc: 'The Budget_R app was built as the capstone project at the end of the Ruby on Rails module at @Microverseinc. It is about building a mobile web application where you, the user, can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    projectbtnlive: 'https://budget-r.herokuapp.com/',
+    projectbtnsource: 'https://github.com/carlylechia/Budget_R.git',
+  },
 ];
 
 function modalpopup() {
@@ -229,7 +241,7 @@ function modalpopup4() {
       <div class="popupcontheader">
         <h2 class="desktophide">${modalList[3].title}</h2>
         <h2 class="mobilehide">${modalList[3].title}</h2>
-        <button id="closeModal" class="closeModal" draggable = "true">${modalList[2].closebtn}</button>
+        <button id="closeModal" class="closeModal" draggable = "true">${modalList[3].closebtn}</button>
       </div>
       <div class="popupcontlangs">
         <ul>
@@ -265,5 +277,55 @@ function modalpopup4() {
 document.addEventListener('click', (e) => {
   if (e.target.id === 'proj4') {
     modalpopup4();
+  }
+});
+
+const popUp5 = document.createElement('div');
+popUp5.classList.add('popup');
+
+function modalpopup5() {
+  popUp5.style.display = 'block';
+  body.appendChild(popUp5);
+  const showing = `
+  <div class="popupcont">
+      <div class="popupcontheader">
+        <h2 class="desktophide">${modalList[4].title}</h2>
+        <h2 class="mobilehide">${modalList[4].title}</h2>
+        <button id="closeModal" class="closeModal" draggable = "true">${modalList[4].closebtn}</button>
+      </div>
+      <div class="popupcontlangs">
+        <ul>
+          <li>${modalList[4].html}</li>
+          <li>${modalList[4].bootstrap}</li>
+          <li>${modalList[4].ruby}</li>
+        </ul>
+      </div>
+      <div class="popupcontbody">
+        <div class="popupcontbodyleft">
+          <img src="${modalList[4].projectImage}" alt="image" width="300" height="600">
+        </div>
+        <div class="popupcontbodyright">
+          <p class="desktophide">${modalList[4].projectDesc}</p>
+          <p class="mobilehide">${modalList[4].projectDesc}</p>
+          <div class="popupcontbodyrightbtns">
+          <a href=${modalList[4].projectbtnlive}><button type="button" id="modalbtns live">See Live <img src="images/viewlive.png" alt="view live"></button></a>
+          <a href=${modalList[4].projectbtnsource}><button type="button" id="modalbtns live">See Source <img src="images/viewsource.png" alt="view Source"></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  popUp5.innerHTML = showing;
+  body.appendChild(popUp5);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.id === 'closeModal') {
+      popUp5.style.display = 'none';
+    }
+  });
+}
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'proj5') {
+    modalpopup5();
   }
 });
